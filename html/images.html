@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    
+    .image {
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="image-gallery">
+        <div class="image">
+            <img src="../gtr.jpg" alt="Image 1">
+        </div>
+        <div class="image">
+            <img src="../tom.jpeg" alt="Image 2">
+        </div>
+        <div class="image">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230720/pngtree-blue-and-purple-neon-star-3d-art-background-with-a-cool-image_3705286.jpg" alt="Image 3">
+        </div>
+        <div class="image">
+            <img src="https://thumbs.dreamstime.com/b/cool-wallpapers-backgrounds-check-out-our-68126782.jpg" alt="Image 4">
+        </div> 
+    </div>
+
+</body>
+</html>
